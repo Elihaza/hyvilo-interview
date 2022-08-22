@@ -30,7 +30,6 @@ function Fiche(props: {name: string}) {
 }
 
 function Contacts(props: {name: string}) {
-  const tab : {name: string, description: string, type: string}[] = JSON.parse(localStorage.getItem('my_array') || '[]');
   const [contacts, setContacts] = useState<{name: string}[]>([
     {name: 'Prupe Corp.'}, {name: 'Michel'}, {name: 'Bizières sur Zoid'}],);
 
@@ -40,6 +39,9 @@ function Contacts(props: {name: string}) {
     {name: 'Bizières sur Zoid', description: 'Bizières sur Zoid is a French city in the Loire Valley', type: 'Collectivite'}
   ]);
   
+  let tab : {name: string, description: string, type: string}[] = infoContact;
+  console.log(tab, '1erefious');
+  
   const [currentContact, setCurrentContact] = useState<string>("");
   // const [show, setShow] = useState<boolean>(false);
   // const [index, setIndex] = useState<number>(0);
@@ -48,11 +50,11 @@ function Contacts(props: {name: string}) {
   useEffect(() => {
     localStorage.setItem('my_array', JSON.stringify(infoContact));
     setLeNom(props.name);
+    console.log('la');
   }, [props.name]);
 
+  tab = JSON.parse(localStorage.getItem('my_array') || '[]');
   
-
-
   const handleClick = (name: string) => {
     setLeNom('');
     // setShow(true);
@@ -66,11 +68,16 @@ function Contacts(props: {name: string}) {
         <h1>Contacts</h1>
       </div>
       <div className="Contact">
-        {tab?.map((contact, index) => (
+        {tab[3] ? tab?.map((contact, index) => (
           <div onClick={() => handleClick(contact.name)} className="Personne" key={index}>
             <p><strong>{contact.name}</strong></p>
           </div>
-        ))}
+        ))
+      : infoContact?.map((contact, index) => (
+        <div onClick={() => handleClick(contact.name)} className="Personne" key={index}>
+          <p><strong>{contact.name}</strong></p>
+        </div>
+      ))}
       </div>
       {leNom ? <Fiche name={leNom}/> : <Fiche name={currentContact}/>}
     </div>
@@ -100,6 +107,7 @@ function App() {
     setLat(e.lngLat.lat);
     setShowPopup(showPopup => !showPopup);
   }
+
 
   return (
   <div className="App">
