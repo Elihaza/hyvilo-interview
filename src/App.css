@@ -26,7 +26,7 @@
 
 .Contact {
   text-align: left;
-  margin-top: 0.04rem;
+  margin-top: 0.2rem;
   /* padding: 5px; */
   border: 2px solid #73AD21;
 }
@@ -37,14 +37,14 @@
 }
 
 .Personne:hover {
-  background-color: #89b18d;
+  background-color: #22868d
 }
 
 .ficheContact {
   text-align: center;
   margin-top: 4rem;
   width: 300px;
-  border: 2px solid #608d22;
+  border: 2px solid #22868d;
   padding: 10px;
 }
 
@@ -52,4 +52,25 @@
   text-align: left;
   margin-top: 3rem;
   /* padding: 5px; */
+}
+
+.titrePopup {
+  text-align: center;
+}
+
+.inputName{
+  margin-top: 1rem;
+}
+
+.inputDesc {
+  margin-top: 1rem;
+}
+
+.inputType {
+  margin-top: 1rem;
+}
+
+.allInputs {
+  text-align: center;
+  /* padding: 5px 5px 5px 5px; */
 }
