@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-/!\ CAUTION /!\\
+/!\ CAUTION /!\\\
 The repo doesn't have the node_modules, in order to install them, run in the project root :
 
 ### `npm install`
