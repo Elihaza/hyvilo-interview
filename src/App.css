@@ -27,7 +27,6 @@
 .Contact {
   text-align: left;
   margin-top: 0.2rem;
-  /* padding: 5px; */
   border: 2px solid #73AD21;
 }
 
@@ -51,7 +50,6 @@
 .leContact {
   text-align: left;
   margin-top: 3rem;
-  /* padding: 5px; */
 }
 
 .titrePopup {
@@ -72,5 +70,4 @@
 
 .allInputs {
   text-align: center;
-  /* padding: 5px 5px 5px 5px; */
 }
