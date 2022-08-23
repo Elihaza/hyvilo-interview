@@ -1,7 +1,7 @@
 # HOW TO USE
 
 Click on a marker in the map, or a name in the Contact list on the right to display informations about them.\
-To add a new Contact, click anywhere on the map and fill in the required informations.
+To add a new Contact, click anywhere on the map and fill in the required informations.\
 Quick Tip : to avois missclicking the markers, try to aim for the white dot in the center of them.
 
 # Getting Started with Create React App
