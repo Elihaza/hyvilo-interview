@@ -1,6 +1,6 @@
 # HOW TO USE
 
-Click on a marker in the map, or a name in the Contact list on the right to display informations about the existing ones.
+Click on a marker in the map, or a name in the Contact list on the right to display informations about the existing ones.\
 To add a new Contact, click anywhere on the map and fill in the required informations.
 
 # Getting Started with Create React App
@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-/!\ CAUTION /!\
+/!\ CAUTION /!\\
 The repo doesn't have the node_modules, in order to install them, run in the project root :
 
 ### `npm install`
